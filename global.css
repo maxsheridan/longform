@@ -82,7 +82,7 @@ body {
     min-height: 100dvh;
     max-height: unset;
     overflow-y: unset;
-    background-color: var(--background-color);
+    background-color: var(--accent-color);
 }
 
 .the-big-picture {
@@ -92,9 +92,17 @@ body {
     z-index: 3;
     height: 100dvh;
     box-shadow: inset -7px 0 0 var(--primary-color);
-    background-color: #FFBE2E;
     animation: fadeIn 1.5s ease forwards;
     -webkit-animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .web-writing .the-big-picture {
