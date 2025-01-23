@@ -43,8 +43,16 @@
     --quote-accent: #E2DFD9;
 }
 
-[data-theme="light"] .web-writing {
+[data-theme="light"] {
+    .web-writing, #web-writing {
     --accent-color: #CAD9DD;
+    }
+}
+
+[data-theme="light"] {
+    .marketing, #marketing {
+    --accent-color: pink;
+    }
 }
 
 [data-theme="dark"] {
@@ -57,8 +65,16 @@
     --quote-accent: #CCCBCB;
 }
 
-[data-theme="dark"] .web-writing {
+[data-theme="dark"] {
+    .web-writing, #web-writing {
     --accent-color: #1E00FF;
+    }
+}
+
+[data-theme="dark"] {
+    .marketing, #marketing {
+    --accent-color: rgb(255, 0, 136);
+    }
 }
 
 * {
