@@ -339,6 +339,7 @@ footer.slide-o-matic {
     font-family: var(--heading-font);
     font-size: clamp(1.6rem, 3vw, 1.85rem);
     color: var(--primary-color);
+    background: none;
     cursor: pointer;
 }
 
