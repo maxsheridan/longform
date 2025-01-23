@@ -82,7 +82,14 @@ body {
     min-height: 100dvh;
     max-height: unset;
     overflow-y: unset;
-    background-color: var(--accent-color);
+}
+
+.tech .stuff {
+    background-color: #FFBE2E;
+}
+
+.web-writing .stuff {
+    background-color: #B9D4D7;
 }
 
 .the-big-picture {
