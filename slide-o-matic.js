@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector("footer.slide-o-matic");let o=window.scrollY;window.addEventListener("scroll",(()=>{const s=window.scrollY;s>100&&s>o?e.classList.add("visible"):e.classList.remove("visible"),o=s}))}));
