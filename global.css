@@ -94,9 +94,20 @@ body {
     height: 100vh;
     height: 100dvh;
     box-shadow: inset -7px 0 0 var(--primary-color);
+    background: #FFBE2E;
     animation: fadeIn 1.5s ease forwards;
     -webkit-animation: fadeIn 1.5s ease forwards;
 }
+
+.web-writing .the-big-picture {
+    background: #CAD9DE;
+}
+
+.marketing .the-big-picture {
+    background: pink;
+}
+
+.the-big-picture 
 
 .a-lot-of-words {
     display: flex;
