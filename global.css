@@ -50,11 +50,15 @@
 [data-theme="dark"] {
     --primary-color:floralwhite;
     --alt-primary-color: #E2DFD9;
-    --accent-color: #2323FF;
+    --accent-color: #5E239D;
     --background-color: #15110F;
     --box-text-color: #15110F;
     --box-background-color: #FFBE2E;
     --quote-accent: #CCCBCB;
+}
+
+[data-theme="darl"] .web-writing {
+    --accent-color: #2323FF;
 }
 
 * {
