@@ -79,7 +79,6 @@ body {
 
 .stuff {
     display: flex;
-    min-height: 100vh;
     min-height: 100dvh;
     max-height: unset;
     overflow-y: unset;
@@ -91,23 +90,20 @@ body {
     position: sticky;
     top: 0;
     z-index: 3;
-    height: 100vh;
     height: 100dvh;
     box-shadow: inset -7px 0 0 var(--primary-color);
-    background: #FFBE2E;
+    background-color: #FFBE2E;
     animation: fadeIn 1.5s ease forwards;
     -webkit-animation: fadeIn 1.5s ease forwards;
 }
 
 .web-writing .the-big-picture {
-    background: #CAD9DE;
+    background-color: #CAD9DE;
 }
 
 .marketing .the-big-picture {
-    background: pink;
+    background-color: pink;
 }
-
-.the-big-picture 
 
 .a-lot-of-words {
     display: flex;
