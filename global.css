@@ -44,21 +44,21 @@
 }
 
 [data-theme="light"] .web-writing {
-    --accent-color: #B9D4D7;
+    --accent-color: #CAD9DD;
 }
 
 [data-theme="dark"] {
     --primary-color:floralwhite;
     --alt-primary-color: #E2DFD9;
-    --accent-color: #717171;
+    --accent-color: #AE00FF;
     --background-color: #15110F;
     --box-text-color: #15110F;
-    --box-background-color: #FFBE2E;
+    --box-background-color: #D7CADD;
     --quote-accent: #CCCBCB;
 }
 
-[data-theme="darl"] .web-writing {
-    --accent-color: #2323FF;
+[data-theme="dark"] .web-writing {
+    --accent-color: #1e00ff;
 }
 
 * {
@@ -89,11 +89,11 @@ body {
 }
 
 .tech .stuff {
-    background-color: #FFBE2E;
+    background-color: #D7CADD;
 }
 
 .web-writing .stuff {
-    background-color: #B9D4D7;
+    background-color: #CAD9DD;
 }
 
 .the-big-picture {
@@ -114,14 +114,6 @@ body {
     to {
         opacity: 1;
     }
-}
-
-.web-writing .the-big-picture {
-    background-color: #CAD9DE;
-}
-
-.marketing .the-big-picture {
-    background-color: pink;
 }
 
 .a-lot-of-words {
