@@ -337,7 +337,7 @@ footer.slide-o-matic {
 
 .slide-o-matic button, .slide-o-matic .button {
     font-family: var(--heading-font);
-    font-size: clamp(1.6rem, 3vw, 1.85rem);
+    font-size: clamp(1.4rem, 3vw, 1.85rem);
     color: var(--primary-color);
     background: none;
     cursor: pointer;
@@ -363,10 +363,10 @@ footer.slide-o-matic {
     height:clamp(36px,5vw,40px);
 }
 
-.inline-graphic.rgt-arrow  {
+.inline-graphic.rgt-arrow {
     width: auto;
-    height:var(--body-font-size);
-    margin-left: 3px;
+    height: clamp(14px,2vw,20px);
+    margin-left: 4px;
 }
 
 .inline-graphic.rgt-arrow-mini  {
