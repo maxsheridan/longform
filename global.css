@@ -360,19 +360,19 @@ footer.slide-o-matic {
 }
 
 .inline-graphic.peace {
-    height:clamp(2.25rem,5vw,2.5rem);
+    height:clamp(36px,5vw,40px);
 }
 
 .inline-graphic.rgt-arrow  {
     width: auto;
     height:var(--body-font-size);
-    padding-left: .15rem;
+    margin-left: 3px;
 }
 
 .inline-graphic.rgt-arrow-mini  {
     width: auto;
-    height:clamp(.7rem,3vw,.85rem);
-    padding-right: .25rem;
+    height:clamp(12px,2vw,13px);
+    margin-right: 3px;
 }
 
 @media (max-width:768px) {
