@@ -326,7 +326,7 @@ footer.slide-o-matic {
     background: var(--background-color);
 }
 
-.pair-of-buttons {
+.thruple-of-buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -359,21 +359,19 @@ footer.slide-o-matic {
     margin-top: clamp(3rem,3vw,4rem);
 }
 
-.inline-graphic.peace {
+.coda {
     width: auto;
-    height:clamp(36px,5vw,40px);
+    height:clamp(36px,5vw,38px);
 }
 
-.inline-graphic.rgt-arrow {
+.arrow-rgt {
     width: auto;
     height: clamp(14px,2vw,20px);
-    margin-left: 4px;
 }
 
-.inline-graphic.rgt-arrow-mini  {
+.arrow-rgt-mini  {
     width: auto;
     height:clamp(12px,2vw,13px);
-    margin-right: 3px;
 }
 
 @media (max-width:768px) {
