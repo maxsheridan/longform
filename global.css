@@ -40,6 +40,7 @@
     --background-color:floralwhite;
     --box-text-color: #15110F;
     --box-background-color: #E2DFD9;
+    --box-shadow-color: rgba(99, 99, 99, 0.3);
     --quote-accent: #E2DFD9;
 }
 
@@ -62,6 +63,7 @@
     --background-color: #15110F;
     --box-text-color: #15110F;
     --box-background-color: #D7CADD;
+    --box-shadow-color: rgb(174, 0, 255, 0.6);
     --quote-accent: #CCCBCB;
 }
 
@@ -181,7 +183,7 @@ body {
 .some-extra-info {
     margin-top: 2rem;
     border-radius: .25rem;
-    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    box-shadow: var(--box-shadow-color) 0 2px 8px 0;
     padding: 1rem;
     background: var(--box-background-color);
 }
