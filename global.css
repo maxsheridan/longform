@@ -35,7 +35,7 @@
 
 [data-theme="light"] {
     --primary-color:#15110F;
-    --alt-primary-color:#656565;
+    --subtitle-color:#656565;
     --accent-color: #D7CADD;
     --background-color:floralwhite;
     --box-text-color: #15110F;
@@ -57,7 +57,7 @@
 
 [data-theme="dark"] {
     --primary-color:floralwhite;
-    --alt-primary-color: #E2DFD9;
+    --primary-color-light: #E2DFD9;
     --accent-color: #AE00FF;
     --background-color: #15110F;
     --box-text-color: #15110F;
@@ -162,7 +162,7 @@ body {
 }
 
 .catchy-description p {
-    color: var(--alt-primary-color);
+    color: var(--subtitle-color);
 }
 
 .me p {
@@ -181,7 +181,7 @@ body {
 .some-extra-info {
     margin-top: 2rem;
     border-radius: .25rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
     padding: 1rem;
     background: var(--box-background-color);
 }
