@@ -25,12 +25,12 @@
 
 :root {
     --body-font: 'ABC Arizona Text',  Helvetica,  Arial,  sans-serif;
-    --body-font-size: clamp(1.05rem, 3vw, 1.2rem);
+    --body-font-size: clamp(1.1rem, 3vw, 1.2rem);
     --bold--font: 'ABC Arizona Text Bold',  Helvetica,  Arial,  sans-serif;
     --heading-font: 'ABC Arizona Flare Bold',  Helvetica,  Arial,  sans-serif;
-    --heading-font-large: clamp(1.67rem, 3vw, 1.85rem);
-    --heading-font-medium: clamp(1.5rem, 3vw, 1.67rem);
-    --heading-font-small: clamp(1.22rem, 3vw, 1.35rem);
+    --heading-font-large: clamp(1.6rem, 3vw, 1.78rem);
+    --heading-font-medium: clamp(1.44rem, 3vw, 1.6rem);
+    --heading-font-small: clamp(1.15rem, 3vw, 1.28rem);
 }
 
 [data-theme="light"] {
