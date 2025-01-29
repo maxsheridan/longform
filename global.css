@@ -247,7 +247,7 @@ b,strong {
 }
 
 h2.heading-before-a-list {
-    margin-bottom: 0;
+    margin-bottom: -.5rem;
 }
 
 .fancy-pants-list {
