@@ -47,7 +47,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --primary-color:floralwhite;
-        --primary-color-light: #E2DFD9;
+        --subtitle-color: #E2DFD9;
         --accent-color: #AE00FF;
         --background-color: #15110F;
         --box-text-color: #15110F;
@@ -59,7 +59,7 @@
 
 :root[data-force-color-mode="dark"] {
     --primary-color:floralwhite;
-    --primary-color-light: #E2DFD9;
+    --subtitle-color: #E2DFD9;
     --accent-color: #AE00FF;
     --background-color: #15110F;
     --box-text-color: #15110F;
