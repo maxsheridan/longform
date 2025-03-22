@@ -7,9 +7,9 @@
 }
 
 @font-face {
-    font-family: 'ABC Arizona Text Bold';
+    font-family: 'ABC Arizona Text';
     src: url(/assets/type/Arizona_Text_Bold.woff2) format('woff2');
-    font-weight:600;
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
@@ -18,7 +18,7 @@
 @font-face {
     font-family: 'ABC Arizona Flare Bold';
     src: url(/assets/type/Arizona_Flare_Bold.woff2) format('woff2');
-    font-weight:600;
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
@@ -26,35 +26,58 @@
 :root {
     --body-font: 'ABC Arizona Text',Helvetica,sans-serif,system-ui;
     --body-font-size: clamp(1.1rem, 3vw, 1.2rem);
-    --bold--font: 'ABC Arizona Text Bold',Helvetica,sans-serif,system-ui;
     --heading-font: 'ABC Arizona Flare Bold',Helvetica,sans-serif,system-ui;
     --heading-font-large: clamp(1.6rem, 3vw, 1.78rem);
     --heading-font-medium: clamp(1.44rem, 3vw, 1.6rem);
     --heading-font-small: clamp(1.15rem, 3vw, 1.28rem);
     --primary-color:#161718;
     --subtitle-color:#656565;
-    --accent-color: #C2D1D8;
+    --quote-border-color: lightgrey;
+    --tech-accent-color: #633E7E;
+    --web-writing-accent-color: #0F809F;
+    --marketing-accent-color: #E25173;
+    --marketing-highlight-color: #FFC0CA;
     --background-color:#EFEEEB;
     --gap: 1.25rem;
     --big-gap: 2rem;
 } 
 
+.tech {
+    --accent-color: var(--tech-accent-color);
+}
+
+.web-writing {
+    --accent-color: var(--web-writing-accent-color);
+}
+
+.marketing {
+    --accent-color: var(--marketing-accent-color);
+    --highlight-color: var(--marketing-highlight-color);
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary-color: #EFEEEB;
+        --primary-color: #d7d4ca;
         --subtitle-color: #A3A3A3;
-        --accent-color:  #720189;
+        --quote-border-color: #A3A3A3;
         --background-color: #161718;
+        --tech-accent-color: #D7CAE1;
+        --web-writing-accent-color: #60B6CE;
+        --marketing-accent-color: #FFC0CA;
+        --marketing-highlight-color: #1F1F56;
     }
-    .heavy-duty-underline {
-        margin-right: .25rem;
-        text-decoration: underline;
-        text-decoration-skip-ink: auto;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 4px;
-        box-shadow: unset !important;
+    .tech {
+        --accent-color: var(--tech-accent-color);
+    }
+    .web-writing {
+        --accent-color: var(--web-writing-accent-color);
+    }
+    .marketing {
+        --accent-color: var(--marketing-accent-color);
+        --highlight-color: var(--marketing-highlight-color);
     }
     .some-extra-info {
+        color: var(--background-color);
         box-shadow: unset !important;
         border: 1px solid #545454;
     }
@@ -82,6 +105,11 @@ body {
     z-index: 0;
     min-height: 100vh;
     margin: unset;
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
     color: var(--primary-color);
     background-color: var(--background-color);
 }
@@ -135,15 +163,6 @@ body {
     color: var(--subtitle-color);
 }
 
-.me p {
-    display: inline-block;
-    box-shadow: 0 -.7rem inset var(--accent-color);
-}
-
-.me p, .some-more-intro-words p {
-    font-family: var(--heading-font);
-}
-
 .the-actual-words {
     margin-block-start: var(--big-gap);
 }
@@ -153,52 +172,21 @@ body {
     box-shadow: var(--subtitle-color) 0 2px 8px 0;
     margin-block: calc(var(--big-gap) + .5rem);
     padding: 1rem;
+    color: var(--background-color);
     background: var(--accent-color);
 }
 
-.some-extra-info p {
-    margin: unset;
-}
-
-.heavy-duty-underline {
-    font-family: var(--heading-font);
-    box-shadow: 0 -.75rem inset var(--background-color);
-}
-
-p, li, a {
-    font-family: var(--body-font);
-    font-size: var(--body-font-size);
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.5;
+a {
     color: var(--primary-color);
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--accent-color);
+    text-decoration-skip-ink: all;
+    text-underline-offset: 2px;
 }
 
-b,strong {
-    font-family: var(--bold--font);
-}
-
-.just-a-list {
-    list-style: none;
-}
-
-.just-a-list h3 {
-    display: inline;
-    box-shadow: 0 -.75rem inset var(--accent-color);
-}
-
-.fancy-pants-list {
-    list-style: decimal;
-    list-style-position: inside;
-}
-
-sup {
-    box-shadow: 0 -.45rem inset var(--accent-color);
-}
-
-a:not(header a):not(footer a):not(.bunch-of-buttons a):not(.back a) {
-    box-shadow: 0 -.55rem 0 inset var(--accent-color)
+b {
+    font-weight: bold;
 }
 
 h3 {
@@ -229,6 +217,19 @@ h1 {
     color: var(--primary-color);
 }
 
+ul li:not(:first-of-type) h3 {
+    margin-block-start: calc(var(--gap) + .5rem);
+}
+
+.just-a-list {
+    list-style: none;
+}
+
+.fancy-pants-list {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
 .dropcap {
     float: left;
     padding: .75rem .5rem .75rem 0;
@@ -242,7 +243,7 @@ h1 {
 .big-ass-quote {
     margin-left: .25rem;
     padding-left: 2rem;
-    border-left: 5px solid var(--accent-color);
+    border-left: 3px solid var(--quote-border-color);
 }
 
 .big-ass-blockquote {
@@ -251,7 +252,7 @@ h1 {
 
 .big-ass-blockquote h2 {
     display: inline;
-    box-shadow: 0 -.75rem inset var(--accent-color);
+    box-shadow: 0 -.75rem inset var(--highlight-color);
 }
 
 hr {
@@ -273,6 +274,12 @@ hr {
 .arrow-rgt-mini  {
     width: auto;
     height:clamp(12px,2vw,13px);
+}
+
+.dot {
+    width: auto;
+    height: 15px;
+    padding-right: 2px;
 }
 
 @media (max-width:768px) {
