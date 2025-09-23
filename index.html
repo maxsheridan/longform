@@ -6,87 +6,100 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
         <meta name="color-scheme" content="light dark">
-        <link rel="preload" href="/assets/type/Arizona_Text.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="/assets/type/Arizona_Flare_Bold.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/assets/type/Triptych-Roman.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/assets/type/Triptych-Italick.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/assets/type/Triptych-Grotesque.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="stylesheet" href="/style.css">
         <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32">
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
         <link rel="manifest" href="/manifest.json" type="application/json">
         <title>Longform - Max Sheridan</title>
-        <meta name="description" content="Coming soon!...">
-        <style>.stuff{display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:100dvh;padding:4rem 1rem;text-align:center}li{line-height:1}.small-heading{font-size:var(--heading-font-small);color:var(--accent-color)}a{text-decoration:unset}@media(hover:hover) and (pointer:fine){a:hover{text-decoration:underline;text-decoration-color:var(--accent-color);text-decoration-thickness:2px;text-decoration-skip-ink:all;text-underline-offset:2px}}</style>
+        <meta name="description" content="Selected recent articles for clients and agencies">
+        <style>@media (prefers-color-scheme:dark){#home{background-color:#161718}#home .intro *{color:#D7D4CA}}main{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:4rem 1rem;margin:0 auto}.intro h1{margin-block-end:.5rem}.intro p{margin-block-start:var(--medium-gap);font-size:calc(var(--body-font-size) * 1.25)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--big-gap);width:100%;max-width:1300px;align-items:stretch;margin-block-start:var(--x-big-gap)}.grid a{text-decoration:none}.card{display:flex;flex-direction:column;min-height:425px;overflow:hidden;border:1px solid #DDD;border-radius:1rem;box-shadow:0 2px 6px rgba(0,0,0,0.05);background:#fff}.card img{width:100%;height:200px;object-fit:cover;border-top-left-radius:1rem;border-top-right-radius:1rem}.card-content{display:flex;flex-direction:column;justify-content:flex-start;flex:1;padding:1rem}.card-content h2{margin-block-start:unset;font-family:var(--body-font);font-size:var(--body-font-size)}.tag{display:inline-block;max-width:fit-content;margin-block-start:var(--medium-gap);margin-block-end:var(--medium-gap);padding:.25rem .75rem;border:2px solid rgb(var(--accent-color));border-radius:90px;font-family:var(--heading-font);font-size:calc(var(--body-font-size) * .65);color:rgb(var(--accent-color));background-color:rgb(var(--accent-color),.1)}</style>
     </head>
     <body>
-        <main>
-            <div class="stuff">
-                <div class="the-big-intro">
-                    <h1 style="margin-bottom: .5rem">Longform</h1>
-                    <p>by Max Sheridan</p>
+        <main id="home">
+            <div class="intro">
+                <div class="center">
+                    <h1>Longform</h1>
+                    <span class="italic">by Max Sheridan</span>
                 </div>
-                <div class="a-bunch-of-articles">
-                    <div class="tech">
-                        <h2>
-                            <span class="small-heading">Tech & Digital Security</span>
-                        </h2>
-                        <ul class="just-a-list">
-                            <li>
-                                <a href="/tech/parental-controls.html">
-                                    Her 6-Year-Old Spent $16,000 in the App Store
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tech/holiday-scams.html">
-                                    The Worst Holiday Scams
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tech/porch-pirates.html">
-                                    Is Your Home a Magnet for Porch Pirates?
-                                </a>
-                            </li>
-                        </ul>
+                <p>Selected recent articles for clients and agencies</p>
+            </div>
+            <div class="grid margins-off">
+                <a href="/web-writing/hype-house">
+                    <div class="card web-writing">
+                        <img src="/assets/covers/hype_house.webp" alt="Placeholder">
+                        <div class="card-content">
+                            <h2>Hype House: The Death of Content as We Know It</h2>
+                            <span class="tag">Web Writing</span>
+                        </div>
                     </div>
-                    <div class="web-writing">
-                        <h2>
-                            <span class="small-heading">Web Writing</span>
-                        </h2>
-                        <ul class="just-a-list">
-                            <li>
-                                <a href="/web-writing/internal-linking.html">
-                                    Internal Linking Best Practices
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/web-writing/hype-house.html">
-                                    The Death of Content As We Know It
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/web-writing/storytellling.html">
-                                    Stories Are More Powerful Than Stats
-                                </a>
-                            </li>
-                        </ul>
+                </a>
+                <a href="/web-writing/internal-linking">
+                    <div class="card web-writing">
+                        <img src="/assets/covers/52_hertz.webp" alt="Placeholder">
+                        <div class="card-content">
+                            <h2>52 Hertz: Internal Linking Best Practices</h2>
+                            <span class="tag">Web Writing</span>
+                        </div>
                     </div>
-                    <div class="marketing">
-                        <h2>
-                            <span class="small-heading">Marketing</span>
-                        </h2>
-                        <ul class="just-a-list">
-                            <li>
-                                <a href="/marketing/digital-transformation.html">
-                                    Three Questions Every CMO Needs to Ask
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/marketing/user-experience.html">
-                                    Yes, It’s Time to Invest in User Experience
-                                </a>
-                            </li>
-                        </ul>
+                </a>
+                <a href="/web-writing/storytellling">
+                    <div class="card web-writing">
+                        <img src="/assets/covers/storytelling.webp" alt="Placeholder">
+                        <div class="card-content">
+                            <h2>Stories are more memorable than stats: Fact or fiction?</h2>
+                            <span class="tag">Web Writing</span>
+                        </div>
                     </div>
-                </div>
+                </a>
+                <a href="/marketing/digital-transformation">
+                    <div class="card marketing">
+                        <img src="/assets/covers/customer_experience.webp" alt="Placeholder">
+                        <div class="card-content">
+                            <h2>Planning a top-to-bottom digital transformation? Ask these three questions first.</h2>
+                            <span class="tag">Marketing</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/marketing/user-experience">
+                    <div class="card marketing">
+                        <img src="/assets/covers/user_experience.png" alt="Placeholder">
+                        <div class="card-content">
+                            <h2>Investing in UX may be the best decision you make this year. Just make sure you do it right.</h2>
+                            <span class="tag">Marketing</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/tech/parental-controls">
+                    <div class="card tech">
+                        <img src="/assets/covers/phishing.webp" alt="Placeholder">
+                        <div class="card-content">
+                            <h2>Her 6-Year-Old Spent $16,000 in the App Store. Here’s How to Keep It From Happening to You.</h2>
+                            <span class="tag">Tech</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/tech/holiday-scams">
+                    <div class="card tech">
+                        <img src="/assets/covers/scam.webp" alt="Placeholder">
+                        <div class="card-content">
+                            <h2> Twas the Night Before Christmas and the Cybercriminals Were Stirring</h2>
+                            <span class="tag">Tech</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/tech/porch-pirates">
+                    <div class="card tech">
+                        <img src="/assets/covers/delivery.webp" alt="Placeholder">
+                        <div class="card-content">
+                            <h2>Is Your Home a Magnet for Porch Pirates? Here’s How to Keep Them Away</h2>
+                            <span class="tag">Tech</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </main>
     </body>
