@@ -180,10 +180,10 @@
         <footer class="slider hidden">
             <div class="buttons margins-off">
                 <div>
-                    <a href="/" class="button">Home</a>
+                    <a href="/" class="button" onclick="history.back(); return false;">Home</a>
                 </div>
                 <div>
-                    <a href="/" class="button" onclick="if (document.referrer) { window.location = document.referrer; } else { window.location = '/'; } return false;">Home</a>
+                    <a href="/" class="button" onclick="history.back(); return false;">Info</a>
                 </div>
                 <div class="theme-toggle">
                     <button type="button" aria-label="Dark mode toggle">
