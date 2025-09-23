@@ -195,11 +195,6 @@ a {
     text-underline-offset: 2px;
 }
 
-a:not(.link a):hover,
-    button:hover {
-        opacity: .7;
-}
-
 @media (hover:hover) and (pointer:fine) {
     a:not(.link a):hover,
     button:hover {
