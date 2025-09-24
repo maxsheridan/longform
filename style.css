@@ -304,7 +304,7 @@ hr {
 }
 
 .spacer {
-    display: inline;
+    display: inline-block;
     width: .75rem;
 }
 
@@ -316,7 +316,7 @@ hr {
 
 .thumbs-up {
     width: auto;
-    height: 37px;
+    height: calc(38px + .5vw);
 }
 
 footer.slider {
