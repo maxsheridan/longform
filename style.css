@@ -32,14 +32,15 @@
     --heading: 'Triptych Grotesque',system-ui,sans-serif;
     --italic: 'Triptych Italick',system-ui,sans-serif;
     --paragraph: calc(1rem + .25vw);
-    --info: calc(var(--paragraph) * .85);
-    --tag: calc(var(--paragraph) * .65);
+    --info: calc(var(--paragraph) * .9);
+    --tag: calc(var(--paragraph) * .66.666);
     --subheading: calc(1.05rem + .25vw);
     --heading-1: calc(1.5rem + .5vw);
     --heading-2: calc(var(--heading-1) * .85);
     --heading-3: calc(var(--heading-1) * .7);
-    --big-icon: calc(38px + .35vw);
+    --x-small-icon: calc(16px + .25vw);
     --small-icon: calc(19px + .25vw);
+    --big-icon: calc(38px + .35vw);
     --primary: 22, 23, 24;
     --box-border: 163, 163, 163;
     --quote-border: 211, 211, 211;
@@ -180,7 +181,7 @@ main {
 
 .dot {
     width: auto;
-    height: calc(17px + .25vw);
+    height: var(--small-icon);
 }
 
 .info {
@@ -190,7 +191,7 @@ main {
 
 .info svg {
     width: auto;
-    height: var(--info);
+    height: var(--x-small-icon);
     margin-bottom: -2px;
 }
 
