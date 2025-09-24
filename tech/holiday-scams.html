@@ -198,7 +198,7 @@
         <footer class="slider hidden">
             <div class="buttons margins-off">
                 <div>
-                    <a href="/" class="button" onclick="history.back(); return false;">Home</a>
+                    <a href="/" class="button" onclick="if (document.referrer) { window.location = document.referrer; } else { window.location = '/'; } return false;">Home</a>
                 </div>
                 <div>
                     <a href="/info" class="button">Info</a>
