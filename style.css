@@ -38,6 +38,8 @@
     --heading-1: calc(1.5rem + .5vw);
     --heading-2: calc(var(--heading-1) * .85);
     --heading-3: calc(var(--heading-1) * .7);
+    --big-icon: calc(38px + .35vw);
+    --small-icon: calc(19px + .25vw);
     --primary: 22, 23, 24;
     --box-border: 163, 163, 163;
     --quote-border: 211, 211, 211;
@@ -317,7 +319,7 @@ hr {
 
 .thumbs-up {
     width: auto;
-    height: calc(38px + .5vw);
+    height: var(--big-icon);
 }
 
 footer.slider {
