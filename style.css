@@ -80,6 +80,7 @@
 
 .grayscale {
     --primary: 40, 32, 39;
+    --quote-border: 40, 32, 39;
     --tech-accent: 40, 32, 39;
     --web-writing-accent: 40, 32, 39;
     --marketing-accent: 40, 32, 39;
@@ -263,7 +264,7 @@ h1 {
 
 .box {
     border-radius: .25rem;
-    box-shadow: var(--box-border) 0 2px 6px 0;
+    box-shadow: rgb(var(--box-border)) 0 2px 6px 0;
     margin-block-start: 3rem;
     margin-block-end: 3rem;
     padding: 1rem;
@@ -274,7 +275,7 @@ h1 {
 .blockquote {
     margin-left: .25rem;
     padding-left: 2rem;
-    border-left: 5px solid var(--quote-border);
+    border-left: 5px solid rgb(var(--quote-border));
 }
 
 
