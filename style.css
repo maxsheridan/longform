@@ -181,7 +181,7 @@ main {
 
 .dot {
     width: auto;
-    height: var(--small-icon);
+    height: var(--x-small-icon);
 }
 
 .info {
