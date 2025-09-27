@@ -31,7 +31,7 @@
     --body: 'Triptych Roman',system-ui,sans-serif;
     --heading: 'Triptych Grotesque',system-ui,sans-serif;
     --italic: 'Triptych Italick',system-ui,sans-serif;
-    --paragraph: calc(1rem + .25vw);
+    --paragraph: calc(1.05rem + .25vw);
     --info: calc(var(--paragraph) * .9);
     --tag: calc(var(--paragraph) * .666);
     --subheading: calc(1.05rem + .25vw);
