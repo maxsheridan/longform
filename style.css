@@ -147,7 +147,7 @@ main {
     top: 0;
     z-index: 3;
     height: 100dvh;
-    box-shadow: inset -7px 0 0 rgb(rgb(var(--primary)));
+    box-shadow: inset -7px 0 0 rgb(var(--primary));
     animation: fadeIn 1.5s ease forwards;
     -webkit-animation: fadeIn 1.5s ease forwards;
 }
