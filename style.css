@@ -28,9 +28,9 @@
     --big-gap: 3rem;
     --x-big-gap: 4rem;
     --max-width: 40rem;
-    --body: 'Triptych Roman',system-ui,sans-serif;
-    --heading: 'Triptych Grotesque',system-ui,sans-serif;
-    --italic: 'Triptych Italick',system-ui,sans-serif;
+    --body: 'Triptych Roman', system-ui, sans-serif;
+    --heading: 'Triptych Grotesque', system-ui, sans-serif;
+    --italic: 'Triptych Italick', system-ui, sans-serif;
     --paragraph: calc(1.05rem + .2vw);
     --info: calc(var(--paragraph) * .9);
     --tag: calc(var(--paragraph) * .666);
