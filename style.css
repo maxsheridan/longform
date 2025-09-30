@@ -127,6 +127,7 @@ html {
 body {
     z-index: 0;
     min-height: 100vh;
+    min-height: 100dvh;
     margin: unset;
     font-family: var(--body);
     font-size: var(--paragraph);
@@ -146,6 +147,7 @@ main {
     position: sticky;
     top: 0;
     z-index: 3;
+    height: 100vh;
     height: 100dvh;
     box-shadow: inset -7px 0 0 rgb(var(--primary));
     animation: fadeIn 1.5s ease forwards;
