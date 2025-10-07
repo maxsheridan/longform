@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Triptych Roman';
-    src: url(/assets/type/Triptych-Roman.woff2) format('woff2');
+    src: url(/assets/type/triptych_roman.woff2) format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Triptych Italick';
-    src: url(/assets/type/Triptych-Italick.woff2) format('woff2');
+    src: url(/assets/type/triptych_italick.woff2) format('woff2');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Triptych Grotesque';
-    src: url(/assets/type/Triptych-Grotesque.woff2) format('woff2');
+    src: url(/assets/type/triptych_grotesque.woff2) format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
