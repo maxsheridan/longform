@@ -267,11 +267,11 @@ h1 {
 
 .dropcap::first-letter {
     float: left;
-    padding: .38rem .5rem .75rem 0;
+    padding: .35rem .5rem .75rem 0;
     font-family: var(--heading);
     font-size: 7rem;
     font-weight: bold;
-    line-height: 4.5rem;
+    line-height: 5rem;
     color: rgb(var(--primary));
 }
 
