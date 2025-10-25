@@ -201,7 +201,7 @@ main {
 
 .info svg {
     width: auto;
-    height: calc(13px + .25vw);
+    height: calc(14px + .2vw);
     margin-bottom: -1px;
 }
 
