@@ -36,9 +36,8 @@
     --tag: calc(var(--paragraph) * .666);
     --subheading: calc(1.1rem + .2vw);
     --heading-1: calc(1.5rem + .5vw);
-    --heading-2: calc(var(--heading-1) * .85);
-    --heading-3: calc(var(--heading-1) * .7);
-    --x-small-icon: calc(16px + .25vw);
+    --heading-2: calc(var(--heading-1) * .9);
+    --heading-3: calc(var(--heading-1) * .8);
     --small-icon: calc(19px + .25vw);
     --big-icon: calc(38px + .35vw);
     --primary: 22, 23, 24;
@@ -191,7 +190,8 @@ main {
 
 .dot {
     width: auto;
-    height: var(--x-small-icon);
+    height: calc(12px + .25vw);
+    margin-right: 4px;
 }
 
 .info {
@@ -201,8 +201,8 @@ main {
 
 .info svg {
     width: auto;
-    height: var(--x-small-icon);
-    margin-bottom: -2px;
+    height: calc(13px + .25vw);
+    margin-bottom: -1px;
 }
 
 a {
