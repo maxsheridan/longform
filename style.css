@@ -31,10 +31,11 @@
     --body: 'Triptych Roman', system-ui, sans-serif;
     --heading: 'Triptych Grotesque', system-ui, sans-serif;
     --italic: 'Triptych Italick', system-ui, sans-serif;
-    --paragraph: calc(1.05rem + .2vw);
-    --info: calc(var(--paragraph) * .9);
-    --tag: calc(var(--paragraph) * .666);    
+    --paragraph: calc(1.05rem + .2vw);  
     --subheading: calc(1.1rem + .2vw);
+    --card-title: calc(1.3rem + 1px);
+    --info: calc(var(--card-title) * .8);
+    --tag: calc(var(--card-title) * .65);  
     --heading-1: calc(1.4rem + .6vw);
     --heading-2: calc(var(--heading-1) * .9);
     --heading-3: calc(var(--heading-1) * .8);
