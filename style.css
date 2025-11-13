@@ -203,7 +203,7 @@ main {
 
 .dot {
     width: auto;
-    height: calc(13px + .25vw);
+    height: calc(12px + .25vw);
     margin-right: 4px;
 }
 
