@@ -36,7 +36,7 @@
     --card-title: calc(1.3rem + 1px);
     --info: calc(var(--card-title) * .8);
     --tag: calc(var(--card-title) * .6);
-    --heading-1: calc(1.4rem + .65vw);
+    --heading-1: calc(1.3rem + .65vw);
     --heading-2: calc(var(--heading-1) * .9);
     --heading-3: calc(var(--heading-1) * .8);
     --small-icon: calc(19px + .25vw);
@@ -240,12 +240,12 @@ em,
     font-family: var(--italic);
 }
 
-h3 {
+h1 {
     font-family: var(--heading);
-    font-size: var(--heading-3);
+    font-size: var(--heading-1);
     font-weight: bold;
+    line-height: 1.2;
     font-style: normal;
-    line-height: 1.3;
     color: rgb(var(--primary));
 }
 
@@ -258,12 +258,12 @@ h2 {
     color: rgb(var(--primary));
 }
 
-h1 {
+h3 {
     font-family: var(--heading);
-    font-size: var(--heading-1);
+    font-size: var(--heading-3);
     font-weight: bold;
-    line-height: 1.2;
     font-style: normal;
+    line-height: 1.3;
     color: rgb(var(--primary));
 }
 
