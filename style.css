@@ -34,7 +34,7 @@
     --paragraph: calc(1rem + .35vw);
     --subheading: var(--paragraph);
     --info: calc(var(--paragraph) * .85);
-    --card-title: calc(1.19rem + 1px);
+    --card-title: calc(1.19rem + .1vw);
     --tag: calc(var(--card-title) * .6);
     --heading-1: calc(1.25rem + .7vw);
     --heading-2: calc(var(--heading-1) * .9);
