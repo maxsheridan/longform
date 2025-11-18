@@ -185,7 +185,7 @@ main {
 
 .words-inner {
     max-width: var(--max-width);
-    padding: 4rem 2rem;
+    padding: 4rem 1.5rem;
 }
 
 .description {
@@ -368,7 +368,7 @@ footer.slider {
     left: unset;
     width: 50%;
     height: 4rem;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     box-shadow: inset 0 7px 0 rgb(var(--primary));
     background: rgb(var(--background), .95);
 }
@@ -378,7 +378,7 @@ footer .buttons {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: calc(var(--max-width) - 4rem);
+    max-width: calc(var(--max-width) - 3rem);
     margin: .5rem auto 0
 }
 
