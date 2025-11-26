@@ -194,13 +194,9 @@ main {
     font-size: var(--subheading);
 }
 
-.byline {
-    line-height: 1.3;
-}
-
 .dot {
-    width: auto;
-    height: calc(12px + .25vw);
+    width: .75em;
+    height: auto;
 }
 
 .info {
@@ -209,8 +205,8 @@ main {
 }
 
 .info svg {
-    width: auto;
-    height: calc(14px + .2vw);
+    width: .95em;
+    height: auto;
     margin-bottom: -1px;
 }
 

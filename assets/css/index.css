@@ -102,8 +102,8 @@ h1.site-title {
 }
 
 .clock {
-    width: auto;
-    height: var(--info);
+    width: 1em;
+    height: auto;
     margin-right: 4px;
 }
 
@@ -132,8 +132,8 @@ h1.site-title {
 }
 
 .arrow-up {
-    width: auto;
-    height: var(--small-icon);
+    width: 1.15em;
+    height: auto;
     vertical-align: text-bottom;
 }
 
@@ -144,7 +144,7 @@ h1.site-title {
     margin-block-start: var(--x-big-gap);
 }
 
-.contact-links>div {
+.contact-links > div {
     align-items: center;
 }
 
@@ -155,7 +155,7 @@ h1.site-title {
 
 .socials {
     width: auto;
-    height: calc(14px + .25vw);
+    height: .8em
 }
 
 .copyright {
