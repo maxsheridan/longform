@@ -187,6 +187,33 @@ main {
     padding: 4rem 1.5rem;
 }
 
+h1 {
+    font-family: var(--heading);
+    font-size: var(--heading-1);
+    font-weight: bold;
+    line-height: 1.2;
+    font-style: normal;
+    color: rgb(var(--primary));
+}
+
+h2 {
+    font-family: var(--heading);
+    font-size: var(--heading-2);
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.2;
+    color: rgb(var(--primary));
+}
+
+h3 {
+    font-family: var(--heading);
+    font-size: var(--heading-3);
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.3;
+    color: rgb(var(--primary));
+}
+
 .description {
     margin-block-start: var(--medium-gap);
     margin-block-end: var(--medium-gap);
@@ -219,6 +246,21 @@ a {
     text-underline-offset: 2px;
 }
 
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+    outline: 4px solid rgb(var(--feature-accent));
+    outline-offset: 3px;
+    border-radius: .25rem;
+}
+
+.grid a, 
+.card,
+.grid a:focus-visible,
+.card:focus-visible {
+    border-radius: 1rem !important;
+}
+
 @media (hover:hover) and (pointer:fine) {
     a:not(.link a):hover,
     button:hover {
@@ -233,33 +275,6 @@ b {
 em,
 .italic {
     font-family: var(--italic);
-}
-
-h1 {
-    font-family: var(--heading);
-    font-size: var(--heading-1);
-    font-weight: bold;
-    line-height: 1.2;
-    font-style: normal;
-    color: rgb(var(--primary));
-}
-
-h2 {
-    font-family: var(--heading);
-    font-size: var(--heading-2);
-    font-weight: bold;
-    font-style: normal;
-    line-height: 1.2;
-    color: rgb(var(--primary));
-}
-
-h3 {
-    font-family: var(--heading);
-    font-size: var(--heading-3);
-    font-weight: bold;
-    font-style: normal;
-    line-height: 1.3;
-    color: rgb(var(--primary));
 }
 
 .just-a-list {
@@ -408,6 +423,27 @@ footer .buttons div:nth-child(3) {
 .hidden.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.skip-link {
+    position: absolute;
+    top: -999px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(var(--primary));
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+.vh {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
 @media (max-width:768px) {

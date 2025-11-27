@@ -29,26 +29,30 @@
         <meta property="og:image:height" content="1080">
     </head>
     <body>
+        <a href="#main-content" class="skip-link">Skip to content</a>
         <div class="portfolio-link">
-            <a href="https://creative.maxsheridan.com">Portfolio<svg class="arrow-up" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="64" y1="192" x2="192" y2="64" fill="none" stroke="currentColor" stroke-width="20"/><polyline points="88 64 192 64 192 168" fill="none" stroke="currentColor" stroke-width="20"/></svg></a>
+            <a href="https://creative.maxsheridan.com">Portfolio<svg class="icon-text-left arrow-up-rgt" viewBox="0 0 25 25"><path fill="none" stroke="currentColor" stroke-width="3.25" d="m1.5 23.738 22-22.001m-17.875 0H23.5v17.876" /></svg></a>
         </div>
-        <main id="home">
-            <div class="intro">
+        <main id="main-content" tabindex="-1">
+            <div class="grid-intro">
                 <div class="center">
                     <h1 class="site-title">Longform</h1>
-                    <span>by Max Sheridan</span>
-                    <p class="description">~ Selected articles ~</p>
+                    <span class="site-author">by Max Sheridan</span>
+                    <span class="description">
+                        <span aria-hidden="true">~</span> Selected articles <span aria-hidden="true">~</span>
+                    </span>
                 </div>
             </div>
-            <div class="grid margins-off">
-                <a href="/web-writing/hype-house">
+            <div class="grid margins-off" role="list">
+                <div role="listitem" aria-posinset="1" aria-setsize="12">
+                    <a href="/web-writing/hype-house">
                     <div class="card web-writing">
                         <img src="/assets/covers/hype_house.webp" alt="" width="1920" height="1080" fetchpriority="high" loading="eager">
                         <div class="card-content">
                             <span class="tag">Web Writing</span>
                             <h2>Hype House: The Death of Content as We Know It</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
                                 <span class="time-info">
                                     <span class="numeral">5</span>
                                     <span>min</span>
@@ -56,15 +60,17 @@
                             </span>
                         </div>
                     </div>
-                </a>
-                <a href="/web-writing/internal-linking">
+                    </a>
+                </div>
+                <div role="listitem" aria-posinset="2" aria-setsize="12">
+                    <a href="/web-writing/internal-linking">
                     <div class="card web-writing">
                         <img src="/assets/covers/52_hertz.webp" alt="" width="1920" height="1080" fetchpriority="high" loading="eager">
                         <div class="card-content">
                             <span class="tag">Web Writing</span>
                             <h2>52 Hertz: Internal Linking Best Practices Explained</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
                                 <span class="time-info">
                                     <span class="numeral">6</span>
                                     <span>min</span>
@@ -72,15 +78,17 @@
                             </span>
                         </div>
                     </div>
-                </a>
-                <a href="/web-writing/storytelling">
+                    </a>
+                </div>
+                <div role="listitem" aria-posinset="3" aria-setsize="12">
+                    <a href="/web-writing/storytelling">
                     <div class="card web-writing">
                         <img src="/assets/covers/storytelling.webp" alt="" width="1920" height="1080" fetchpriority="high" loading="eager">
                         <div class="card-content">
                             <span class="tag">Web Writing</span>
                             <h2>Stories Are More Memorable Than Stats: Fact or Fiction?</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
                                 <span class="time-info">
                                     <span class="numeral">8</span>
                                     <span>min</span>
@@ -88,15 +96,17 @@
                             </span>
                         </div>
                     </div>
-                </a>
-                <a href="/content-writing/content-writing">
+                    </a>
+                </div>
+                <div role="listitem" aria-posinset="4" aria-setsize="12">
+                    <a href="/content-writing/content-writing">
                     <div class="card content-writing">
                         <img src="/assets/covers/nyan_santa.webp" alt="" width="1920" height="1080" fetchpriority="high" loading="eager">
                         <div class="card-content">
                             <span class="tag">Content Writing</span>
                             <h2>Five Things Your Content Wants for the Holidays (That Aren’t For Sale on Amazon)</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
                                 <span class="time-info">
                                     <span class="numeral">5</span>
                                     <span>min</span>
@@ -104,15 +114,17 @@
                             </span>
                         </div>
                     </div>
-                </a>
-                <a href="/marketing/digital-transformation">
+                    </a>
+                </div>
+                <div role="listitem" aria-posinset="5" aria-setsize="12">
+                    <a href="/marketing/digital-transformation">
                     <div class="card marketing">
                         <img src="/assets/covers/customer_experience.webp" alt="" width="2550" height="1375" fetchpriority="high" loading="eager">
                         <div class="card-content">
                             <span class="tag">Marketing</span>
                             <h2>Planning a Top-to-Bottom Digital Transformation? Ask These Three Questions First.</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
                                 <span class="time-info">
                                     <span class="numeral">6</span>
                                     <span>min</span>
@@ -120,15 +132,17 @@
                             </span>
                         </div>
                     </div>
-                </a>
-                <a href="/marketing/user-experience">
+                    </a>
+                </div>
+                <div role="listitem" aria-posinset="6" aria-setsize="12">
+                    <a href="/marketing/user-experience">
                     <div class="card marketing">
                         <img src="/assets/covers/user_experience.webp" alt="" width="2550" height="1375" fetchpriority="high" loading="eager">
                         <div class="card-content">
                             <span class="tag">Marketing</span>
                             <h2>Investing in UX May Be the Best Decision You Make This Year. Or Your Worst Mistake.</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
                                 <span class="time-info">
                                     <span class="numeral">7</span>
                                     <span>min</span>
@@ -136,15 +150,17 @@
                             </span>
                         </div>
                     </div>
-                </a>
-                <a href="/tech/parental-controls">
+                    </a>
+                </div>
+                <div role="listitem" aria-posinset="7" aria-setsize="12">
+                    <a href="/tech/parental-controls">
                     <div class="card tech">
                         <img src="/assets/covers/phishing.webp" alt="" width="2550" height="1375" fetchpriority="high" loading="eager">
                         <div class="card-content">
                             <span class="tag">Tech</span>
                             <h2>Her 6-Year-Old Spent $16,000 in the App Store. Here’s How to Keep It From Happening to You.</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
                                 <span class="time-info">
                                     <span class="numeral">7</span>
                                     <span>min</span>
@@ -152,15 +168,17 @@
                             </span>
                         </div>
                     </div>
-                </a>
-                <a href="/tech/holiday-scams">
+                    </a>
+                </div>
+                <div role="listitem" aria-posinset="8" aria-setsize="12">
+                    <a href="/tech/holiday-scams">
                     <div class="card tech">
                         <img src="/assets/covers/scam.webp" alt="" width="2550" height="1375" loading="lazy">
                         <div class="card-content">
                             <span class="tag">Tech</span>
                             <h2> ‘Twas the Night After Black Friday and the Fraudsters Were Stirring</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
                                 <span class="time-info">
                                     <span class="numeral">8</span>
                                     <span>min</span>
@@ -168,15 +186,17 @@
                             </span>
                         </div>
                     </div>
-                </a>
-                <a href="/tech/porch-pirates">
+                    </a>
+                </div>
+                <div role="listitem" aria-posinset="9" aria-setsize="12">
+                    <a href="/tech/porch-pirates">
                     <div class="card tech">
                         <img src="/assets/covers/delivery.webp" alt="" width="2550" height="1375" loading="lazy">
                         <div class="card-content">
                             <span class="tag">Tech</span>
                             <h2>Is Your Home a Magnet for Porch Pirates? What You Didn’t Know About Package Theft.</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
                                 <span class="time-info">
                                     <span class="numeral">6</span>
                                     <span>min</span>
@@ -184,15 +204,17 @@
                             </span>
                         </div>
                     </div>
-                </a>
-                <a href="/feature/dreaming-of-the-colossus">
+                    </a>
+                </div>
+                <div role="listitem" aria-posinset="10" aria-setsize="12">
+                    <a href="/feature/dreaming-of-the-colossus">
                     <div class="card feature">
                         <img src="/assets/covers/kotziamanis.webp" alt="" width="1198" height="899" loading="lazy">
                         <div class="card-content">
                             <span class="tag">Feature</span>
                             <h2>Dreaming of the Colossus: The Man Who Would Build the Eighth Wonder of the World</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
                                 <span class="time-info">
                                     <span class="numeral">8</span>
                                     <span>min</span>
@@ -200,15 +222,17 @@
                             </span>
                         </div>
                     </div>
-                </a>
-                <a href="/feature/free-love-after-the-apocalypse">
+                    </a>
+                </div>
+                <div role="listitem" aria-posinset="11" aria-setsize="12">
+                    <a href="/feature/free-love-after-the-apocalypse">
                     <div class="card feature">
                         <img src="/assets/covers/utopos.webp" alt="" width="900" height="674" loading="lazy">
                         <div class="card-content">
                             <span class="tag">Feature</span>
                             <h2>Free Love After the Apocalypse: The World According to Utopos of Makounta</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
                                 <span class="time-info">
                                     <span class="numeral">6</span>
                                     <span>min</span>
@@ -216,15 +240,17 @@
                             </span>
                         </div>
                     </div>
-                </a>
-                <a href="/feature/let-us-now-praise-abnormal-men">
+                    </a>
+                </div>
+                <div role="listitem" aria-posinset="12" aria-setsize="12">
+                    <a href="/feature/let-us-now-praise-abnormal-men">
                     <div class="card feature">
                         <img src="/assets/covers/geller.webp" alt="" width="900" height="675" loading="lazy">
                         <div class="card-content">
                             <span class="tag">Feature</span>
                             <h2>Let Us Now Praise Abnormal Men: An Interview with Uri Geller</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
                                 <span class="time-info">
                                     <span class="numeral narrow">11</span>
                                     <span>min</span>
@@ -232,15 +258,16 @@
                             </span>
                         </div>
                     </div>
-                </a>
+                    </a>
+                </div>
             </div>
             <div class="contact-links margins-off">
                 <div class="flex margins-off">
                     <span>max@maxsheridan.com</span>
                     <span class="thin-spacer" aria-hidden="true"></span>
-                    <span><a href="https://substack.com/@sheridanmax"><svg class="socials" viewBox="0 0 21.1 24"><path fill="currentColor" d="M21.08 8.24H0V5.41h21.08zM0 10.81V24l10.54-5.89L21.08 24V10.81zM21.08 0H0v2.84h21.08z"/></svg></a></span>
+                    <span><a href="https://substack.com/@sheridanmax" aria-label="Link to my Substack profile"><svg class="socials" viewBox="0 0 21.1 24"><path fill="currentColor" d="M21.08 8.24H0V5.41h21.08zM0 10.81V24l10.54-5.89L21.08 24V10.81zM21.08 0H0v2.84h21.08z"/></svg></a></span>
                     <span class="thin-spacer" aria-hidden="true"></span>
-                    <span><a href="https://medium.com/copy-cat"><svg class="socials" viewBox="0 0 640 363.5"><path fill="currentColor" d="M180.5.02C80.81.02 0 81.39 0 181.76S80.82 363.5 180.5 363.5 361 282.13 361 181.76 280.2.02 180.5.02m288.25 10.65c-49.85 0-90.24 76.62-90.24 171.1s40.4 171.1 90.25 171.1S559 276.23 559 181.76c0-94.51-40.4-171.1-90.25-171.1m139.5 17.82c-17.52 0-31.73 68.63-31.73 153.27s14.2 153.28 31.74 153.28S640 266.39 640 181.76c0-84.65-14.22-153.27-31.74-153.27"/></svg></a></span>
+                    <span><a href="https://medium.com/copy-cat" aria-label="Link to my Medium page "><svg class="socials" viewBox="0 0 640 363.5"><path fill="currentColor" d="M180.5.02C80.81.02 0 81.39 0 181.76S80.82 363.5 180.5 363.5 361 282.13 361 181.76 280.2.02 180.5.02m288.25 10.65c-49.85 0-90.24 76.62-90.24 171.1s40.4 171.1 90.25 171.1S559 276.23 559 181.76c0-94.51-40.4-171.1-90.25-171.1m139.5 17.82c-17.52 0-31.73 68.63-31.73 153.27s14.2 153.28 31.74 153.28S640 266.39 640 181.76c0-84.65-14.22-153.27-31.74-153.27"/></svg></a></span>
                     <span class="spacer"></span>
                 </div>
                 <div>
