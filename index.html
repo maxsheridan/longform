@@ -9,8 +9,8 @@
         <link rel="preload" href="/assets/type/triptych_grotesque.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <link rel="preload" href="/assets/type/triptych_roman.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <link rel="preload" href="/assets/type/triptych_italick.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-        <link rel="stylesheet" href="/assets/css/style.min.css">
-        <link rel="stylesheet" href="/assets/css/index.min.css">
+        <link rel="stylesheet" href="/assets/css/style.min.css?v=2">
+        <link rel="stylesheet" href="/assets/css/index.min.css?v=2">
         <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32">
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
@@ -36,14 +36,16 @@
         <main id="main-content" tabindex="-1">
             <div class="grid-intro">
                 <div class="center">
-                    <h1 class="site-title">Longform</h1>
-                    <span class="site-author">by Max Sheridan</span>
+                    <div>
+                        <h1 class="site-title">Longform</h1>
+                        <span class="site-author">by Max Sheridan</span>
+                    </div>
                     <span class="description">
                         <span aria-hidden="true">~</span> Selected articles <span aria-hidden="true">~</span>
                     </span>
                 </div>
             </div>
-            <div class="grid margins-off" role="list">
+            <div class="grid" role="list">
                 <div role="listitem" aria-posinset="1" aria-setsize="12">
                     <a href="/web-writing/hype-house">
                     <div class="card web-writing">
@@ -52,7 +54,10 @@
                             <span class="tag">Web Writing</span>
                             <h2>Hype House: The Death of Content as We Know It</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time">
+                                    <circle cx="12.5" cy="12.5" r="11.04"/>
+                                    <path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/>
+                                </svg>
                                 <span class="time-info">
                                     <span class="numeral">5</span>
                                     <span>min</span>
@@ -70,7 +75,10 @@
                             <span class="tag">Web Writing</span>
                             <h2>52 Hertz: Internal Linking Best Practices Explained</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time">
+                                    <circle cx="12.5" cy="12.5" r="11.04"/>
+                                    <path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/>
+                                </svg>
                                 <span class="time-info">
                                     <span class="numeral">6</span>
                                     <span>min</span>
@@ -88,7 +96,10 @@
                             <span class="tag">Web Writing</span>
                             <h2>Stories Are More Memorable Than Stats: Fact or Fiction?</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time">
+                                    <circle cx="12.5" cy="12.5" r="11.04"/>
+                                    <path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/>
+                                </svg>
                                 <span class="time-info">
                                     <span class="numeral">8</span>
                                     <span>min</span>
@@ -106,7 +117,10 @@
                             <span class="tag">Content Writing</span>
                             <h2>Five Things Your Content Wants for the Holidays (That Aren’t For Sale on Amazon)</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time">
+                                    <circle cx="12.5" cy="12.5" r="11.04"/>
+                                    <path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/>
+                                </svg>
                                 <span class="time-info">
                                     <span class="numeral">5</span>
                                     <span>min</span>
@@ -124,7 +138,10 @@
                             <span class="tag">Marketing</span>
                             <h2>Planning a Top-to-Bottom Digital Transformation? Ask These Three Questions First.</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time">
+                                    <circle cx="12.5" cy="12.5" r="11.04"/>
+                                    <path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/>
+                                </svg>
                                 <span class="time-info">
                                     <span class="numeral">6</span>
                                     <span>min</span>
@@ -142,7 +159,10 @@
                             <span class="tag">Marketing</span>
                             <h2>Investing in UX May Be the Best Decision You Make This Year. Or Your Worst Mistake.</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time">
+                                    <circle cx="12.5" cy="12.5" r="11.04"/>
+                                    <path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/>
+                                </svg>
                                 <span class="time-info">
                                     <span class="numeral">7</span>
                                     <span>min</span>
@@ -160,7 +180,10 @@
                             <span class="tag">Tech</span>
                             <h2>Her 6-Year-Old Spent $16,000 in the App Store. Here’s How to Keep It From Happening to You.</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time">
+                                    <circle cx="12.5" cy="12.5" r="11.04"/>
+                                    <path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/>
+                                </svg>
                                 <span class="time-info">
                                     <span class="numeral">7</span>
                                     <span>min</span>
@@ -178,7 +201,10 @@
                             <span class="tag">Tech</span>
                             <h2> ‘Twas the Night After Black Friday and the Fraudsters Were Stirring</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time">
+                                    <circle cx="12.5" cy="12.5" r="11.04"/>
+                                    <path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/>
+                                </svg>
                                 <span class="time-info">
                                     <span class="numeral">8</span>
                                     <span>min</span>
@@ -196,7 +222,10 @@
                             <span class="tag">Tech</span>
                             <h2>Is Your Home a Magnet for Porch Pirates? What You Didn’t Know About Package Theft.</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time">
+                                    <circle cx="12.5" cy="12.5" r="11.04"/>
+                                    <path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/>
+                                </svg>
                                 <span class="time-info">
                                     <span class="numeral">6</span>
                                     <span>min</span>
@@ -214,7 +243,10 @@
                             <span class="tag">Feature</span>
                             <h2>Dreaming of the Colossus: The Man Who Would Build the Eighth Wonder of the World</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time">
+                                    <circle cx="12.5" cy="12.5" r="11.04"/>
+                                    <path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/>
+                                </svg>
                                 <span class="time-info">
                                     <span class="numeral">8</span>
                                     <span>min</span>
@@ -232,7 +264,10 @@
                             <span class="tag">Feature</span>
                             <h2>Free Love After the Apocalypse: The World According to Utopos of Makounta</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time">
+                                    <circle cx="12.5" cy="12.5" r="11.04"/>
+                                    <path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/>
+                                </svg>
                                 <span class="time-info">
                                     <span class="numeral">6</span>
                                     <span>min</span>
@@ -250,7 +285,10 @@
                             <span class="tag">Feature</span>
                             <h2>Let Us Now Praise Abnormal Men: An Interview with Uri Geller</h2>
                             <span class="time">
-                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time"><circle cx="12.5" cy="12.5" r="11.04"/><path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/></svg>
+                                <svg  class="clock" viewBox="0 0 25 25" aria-label="Reading time">
+                                    <circle cx="12.5" cy="12.5" r="11.04"/>
+                                    <path stroke="currentColor" stroke-width=".25" d="M12.5 0C5.64 0 0 5.64 0 12.5S5.64 25 12.5 25 25 19.36 25 12.5C25 5.65 19.36 0 12.5 0m0 23.08c-5.8 0-10.58-4.78-10.58-10.58S6.7 1.92 12.5 1.92 23.08 6.7 23.08 12.5A10.65 10.65 0 0 1 12.5 23.08m7.7-10.58c0 .53-.44.96-.97.96H12.5a.97.97 0 0 1-.96-.96V5.77a.96.96 0 0 1 1.92 0v5.77h5.77c.53 0 .96.43.96.96"/>
+                                </svg>
                                 <span class="time-info">
                                     <span class="numeral narrow">11</span>
                                     <span>min</span>
@@ -261,17 +299,30 @@
                     </a>
                 </div>
             </div>
-            <div class="contact-links margins-off">
-                <div class="flex margins-off">
+            <div class="contact-links">
+                <div class="flex">
                     <span>max@maxsheridan.com</span>
-                    <span class="thin-spacer" aria-hidden="true"></span>
-                    <span><a href="https://substack.com/@sheridanmax" aria-label="Link to my Substack profile"><svg class="socials" viewBox="0 0 21.1 24"><path fill="currentColor" d="M21.08 8.24H0V5.41h21.08zM0 10.81V24l10.54-5.89L21.08 24V10.81zM21.08 0H0v2.84h21.08z"/></svg></a></span>
-                    <span class="thin-spacer" aria-hidden="true"></span>
-                    <span><a href="https://medium.com/copy-cat" aria-label="Link to my Medium page "><svg class="socials" viewBox="0 0 640 363.5"><path fill="currentColor" d="M180.5.02C80.81.02 0 81.39 0 181.76S80.82 363.5 180.5 363.5 361 282.13 361 181.76 280.2.02 180.5.02m288.25 10.65c-49.85 0-90.24 76.62-90.24 171.1s40.4 171.1 90.25 171.1S559 276.23 559 181.76c0-94.51-40.4-171.1-90.25-171.1m139.5 17.82c-17.52 0-31.73 68.63-31.73 153.27s14.2 153.28 31.74 153.28S640 266.39 640 181.76c0-84.65-14.22-153.27-31.74-153.27"/></svg></a></span>
-                    <span class="spacer"></span>
+                    <span class="gap--2" aria-hidden="true"></span>
+                    <span>
+                        <a href="https://substack.com/@sheridanmax" aria-label="Link to my Substack profile">
+                            <svg class="socials" viewBox="0 0 21.1 24">
+                                <path fill="currentColor" d="M21.08 8.24H0V5.41h21.08zM0 10.81V24l10.54-5.89L21.08 24V10.81zM21.08 0H0v2.84h21.08z"/>
+                            </svg>
+                        </a>
+                    </span>
+                    <span class="gap--2" aria-hidden="true"></span>
+                    <span>
+                        <a href="https://medium.com/copy-cat" aria-label="Link to my Medium page ">
+                            <svg class="socials" viewBox="0 0 640 363.5">
+                                <path fill="currentColor" d="M180.5.02C80.81.02 0 81.39 0 181.76S80.82 363.5 180.5 363.5 361 282.13 361 181.76 280.2.02 180.5.02m288.25 10.65c-49.85 0-90.24 76.62-90.24 171.1s40.4 171.1 90.25 171.1S559 276.23 559 181.76c0-94.51-40.4-171.1-90.25-171.1m139.5 17.82c-17.52 0-31.73 68.63-31.73 153.27s14.2 153.28 31.74 153.28S640 266.39 640 181.76c0-84.65-14.22-153.27-31.74-153.27"/>
+                            </svg>
+                        </a>
+                    </span>
                 </div>
                 <div>
-                    <svg class="socials copyright" viewBox="0 0 25 25"><path fill="currentColor" d="M12 24.8q-5.23 0-8.56-3.45a11.8 11.8 0 0 1-3.33-8.54q0-3.48 1.76-6.39A12.9 12.9 0 0 1 13 .2q5.23 0 8.56 3.46a11.8 11.8 0 0 1 3.33 8.54q0 3.48-1.76 6.39A12.9 12.9 0 0 1 12 24.8m0-1.64q4.76 0 7.49-2.9t2.73-7.91q0-4.87-2.55-7.7A8.6 8.6 0 0 0 13 1.82q-4.76 0-7.49 2.9t-2.73 7.9q0 4.88 2.55 7.7A8.6 8.6 0 0 0 12 23.17m.67-4.61A5.4 5.4 0 0 1 7.1 12.8q0-2.8 1.68-4.43a5.8 5.8 0 0 1 4.19-1.62q1.62 0 2.9.72 1.27.73 1.27 1.9 0 .65-.35 1t-.92.34q-.5 0-.97-.4-.47-.43-.78-.93-.3-.53-.8-.93a1.6 1.6 0 0 0-1.02-.41q-1.29 0-2.05 1.14-.76 1.15-.76 3.31 0 4.56 3.58 4.56a4.4 4.4 0 0 0 3.5-1.88l.93.72q-2.07 2.65-4.84 2.65"/></svg>2025
+                    <svg class="socials copyright" viewBox="0 0 25 25">
+                        <path fill="currentColor" d="M12 24.8q-5.23 0-8.56-3.45a11.8 11.8 0 0 1-3.33-8.54q0-3.48 1.76-6.39A12.9 12.9 0 0 1 13 .2q5.23 0 8.56 3.46a11.8 11.8 0 0 1 3.33 8.54q0 3.48-1.76 6.39A12.9 12.9 0 0 1 12 24.8m0-1.64q4.76 0 7.49-2.9t2.73-7.91q0-4.87-2.55-7.7A8.6 8.6 0 0 0 13 1.82q-4.76 0-7.49 2.9t-2.73 7.9q0 4.88 2.55 7.7A8.6 8.6 0 0 0 12 23.17m.67-4.61A5.4 5.4 0 0 1 7.1 12.8q0-2.8 1.68-4.43a5.8 5.8 0 0 1 4.19-1.62q1.62 0 2.9.72 1.27.73 1.27 1.9 0 .65-.35 1t-.92.34q-.5 0-.97-.4-.47-.43-.78-.93-.3-.53-.8-.93a1.6 1.6 0 0 0-1.02-.41q-1.29 0-2.05 1.14-.76 1.15-.76 3.31 0 4.56 3.58 4.56a4.4 4.4 0 0 0 3.5-1.88l.93.72q-2.07 2.65-4.84 2.65"/>
+                    </svg>2025
                 </div>
             </div>
         </main>

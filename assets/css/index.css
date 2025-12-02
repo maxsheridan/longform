@@ -11,6 +11,14 @@ main {
     margin: 0 auto;
 }
 
+.grid-intro > div > * + * {
+    margin-block-start: var(--space-2);
+}
+
+.grid-intro > div > div > * + * {
+    margin-block-start: var(--space--1);
+}
+
 .grid-intro span {
     display: block;
 }
@@ -19,26 +27,22 @@ h1.site-title {
     font-size: calc(var(--paragraph) * 1.8);
 }
 
-.grid-intro .site-author {
-    margin-block-start: .75rem;
-}
-
 .grid-intro .description span {
     display: inline;
 }
 
 .grid-intro .description {
-    margin-block-end: var(--gap);
     font-size: calc(var(--paragraph) * 1.02);
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--x-big-gap);
+    gap: 4rem;
     align-items: stretch;
     width: 100%;
-    margin-block-start: var(--x-big-gap);
+    margin-block-start: var(--space-4);
+    margin-block-end: var(--space-4);
 }
 
 .grid a {
@@ -70,13 +74,13 @@ h1.site-title {
 .card-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     flex: 1;
-    padding: var(--gap);
+    padding: var(--space-2) var(--space-1) ;
 }
 
-.card-content *+* {
-    margin-block-start: var(--medium-gap);
+.card-content > * + * {
+    margin-block-start: var(--space-2);
 }
 
 .tag {
@@ -100,7 +104,6 @@ h1.site-title {
 .time {
     display: flex;
     align-items: center;
-    margin-block-end: var(--medium-gap);
     font-size: var(--info);
     font-variant-numeric: lining-nums tabular-nums;
     font-feature-settings: "tnum" 1, "lnum" 1;
@@ -119,11 +122,6 @@ h1.site-title {
 
 .clock circle {
     fill: rgb(var(--accent), .1);
-}
-
-.time-info,
-.time-info > span {
-    margin-block-start: 0;
 }
 
 .portfolio-link {
@@ -154,10 +152,9 @@ h1.site-title {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-block-start: var(--x-big-gap);
 }
 
-.contact-links > div {
+.contact-links div {
     align-items: center;
 }
 
