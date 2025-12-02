@@ -1,5 +1,5 @@
 body {
-    padding: 4rem 1rem;
+    padding: 6rem 1rem;
 }
 
 main {
@@ -41,8 +41,8 @@ h1.site-title {
     gap: 4rem;
     align-items: stretch;
     width: 100%;
-    margin-block-start: var(--space-4);
-    margin-block-end: var(--space-4);
+    margin-block-start: calc(var(--space-3) + 2vw);
+    margin-block-end: calc(var(--space-3) + 2vw);
 }
 
 .grid a {
