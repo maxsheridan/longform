@@ -1,5 +1,5 @@
 body {
-    padding: 6rem 1rem 3rem;
+    padding: 6rem 3rem 3rem;
 }
 
 main {
@@ -7,7 +7,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1340px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -37,12 +37,18 @@ h1.site-title {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 4rem;
     align-items: stretch;
     width: 100%;
     margin-block-start: calc(var(--space-3) + 2vw);
     margin-block-end: calc(var(--space-3) + 2vw);
+}
+
+@media (min-width: 1501px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
 }
 
 .grid a {
@@ -55,7 +61,7 @@ h1.site-title {
 .card {
     display: flex;
     flex-direction: column;
-    min-height: 500px;
+    min-height: 520px;
     overflow: hidden;
     border: 1px solid #DDD;
     border-radius: 1rem;
