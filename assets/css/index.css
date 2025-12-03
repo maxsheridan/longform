@@ -1,6 +1,8 @@
 :root {
     --card-title: calc(1.15rem + .15vw);
-    --tag: calc(var(--card-title) * .6);
+    --card-title: clamp(1.15rem, 5.5cqw, 1.45rem);
+    --tag: calc(var(--card-title) * .7);
+    --time: calc(var(--card-title) * .9);
 }
 
 body {
@@ -28,8 +30,8 @@ main {
     display: block;
 }
 
-h1.site-title {
-    font-size: calc(var(--paragraph) * 1.8);
+.site-title {
+    font-size: calc(var(--font-size-1) * 1.7);
 }
 
 .grid-intro .description span {
@@ -37,12 +39,12 @@ h1.site-title {
 }
 
 .grid-intro .description {
-    font-size: calc(var(--paragraph) * 1.02);
+    font-size: calc(var(--font-size-1) * 1.025);
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(325px, 100%), 1fr));
     gap: calc(3rem + 1vw);
     align-items: stretch;
     width: 100%;
@@ -77,9 +79,10 @@ h1.site-title {
 }
 
 .card-content {
+    container-type: inline-size;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     flex: 1;
     padding: var(--space-2) var(--space-1);
 }
@@ -102,14 +105,15 @@ h1.site-title {
 }
 
 .card-content h2 {
-    font-family: var(--paragraph);
-    font-size: var(--card-title)
+    font-family: var(--body);
+    font-size: var(--card-title);
+    max-width: 35ch;
 }
 
 .time {
     display: flex;
     align-items: center;
-    font-size: var(--info);
+    font-size: var(--time);
     font-variant-numeric: lining-nums tabular-nums;
     font-feature-settings: "tnum" 1, "lnum" 1;
     -webkit-font-feature-settings: "tnum" 1, "lnum" 1;
@@ -135,8 +139,10 @@ h1.site-title {
     top: 1rem;
     right: 1rem;
     z-index: 10;
-    padding: 0 .5rem;
+    padding: 0 .75rem;
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .05);
     background: rgb(var(--background));
 }
 
@@ -149,17 +155,13 @@ h1.site-title {
     height: auto;
 }
 
-.icon-text-left {
-    margin-left: 2px;
-}
-
 .contact-links {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.contact-links div {
+.contact-links > div {
     align-items: center;
 }
 
@@ -170,19 +172,14 @@ h1.site-title {
 
 .socials {
     width: auto;
-    height: .8em
-}
-
-.copyright {
-    margin-right: 2px;
-    vertical-align: middle;
+    height: .75em;
 }
 
 @media (min-width: 1501px) {
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        --card-title: calc(1.15rem + .2vw);
     }
+
     .card {
         min-height: 525px;
     }
