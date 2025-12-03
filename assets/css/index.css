@@ -1,5 +1,10 @@
+:root {
+    --card-title: calc(1.15rem + .125vw);
+    --tag: calc(var(--card-title) * .6);
+}
+
 body {
-    padding: 6rem 3rem 3rem;
+    padding: 6rem calc(1rem + 1.5vw) 3rem;
 }
 
 main {
@@ -37,8 +42,8 @@ h1.site-title {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    gap: calc(3rem + 1vw);
     align-items: stretch;
     width: 100%;
     margin-block-start: calc(var(--space-3) + 2vw);
@@ -47,7 +52,7 @@ h1.site-title {
 
 @media (min-width: 1501px) {
     .grid {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
 }
 
@@ -82,7 +87,7 @@ h1.site-title {
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    padding: var(--space-2) var(--space-1) ;
+    padding: var(--space-2) var(--space-1);
 }
 
 .card-content > * + * {
