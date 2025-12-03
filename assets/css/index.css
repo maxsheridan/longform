@@ -1,5 +1,5 @@
 :root {
-    --card-title: calc(1.15rem + .125vw);
+    --card-title: calc(1.15rem + .15vw);
     --tag: calc(var(--card-title) * .6);
 }
 
@@ -50,12 +50,6 @@ h1.site-title {
     margin-block-end: calc(var(--space-3) + 2vw);
 }
 
-@media (min-width: 1501px) {
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    }
-}
-
 .grid a {
     text-decoration: none;
     display: block;
@@ -66,7 +60,7 @@ h1.site-title {
 .card {
     display: flex;
     flex-direction: column;
-    min-height: 520px;
+    min-height: 500px;
     overflow: hidden;
     border: 1px solid #DDD;
     border-radius: 1rem;
@@ -182,4 +176,14 @@ h1.site-title {
 .copyright {
     margin-right: 2px;
     vertical-align: middle;
+}
+
+@media (min-width: 1501px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        --card-title: calc(1.15rem + .2vw);
+    }
+    .card {
+        min-height: 525px;
+    }
 }
