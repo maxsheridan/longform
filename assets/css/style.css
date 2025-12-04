@@ -129,7 +129,7 @@ body {
     font-size: var(--font-size-1);
     font-weight: 400;
     font-style: normal;
-    line-height: 1.5;
+    line-height: 1.55;
     color: rgb(var(--primary));
     background-color: rgb(var(--background));
 }
