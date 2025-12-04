@@ -185,10 +185,10 @@ li +li h3 {
 }
 
 .words-inner {
+    --space-1: calc(var(--space-0) * var(--ratio) * 1.06);
     max-width: var(--max-width);
     padding: 4rem 1.5rem;
 }
-
 
 h1 {
     font-family: var(--heading);
@@ -232,6 +232,7 @@ h3 {
 }
 
 .info {
+    margin-block-end: var(--space-2);
     font-size: var(--info);
 }
 
