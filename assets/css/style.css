@@ -23,10 +23,10 @@
 }
 
 :root {
-    --ratio: 1.6;
+    --ratio: 1.5;
     --space--2: calc(var(--space--1) / var(--ratio));
     --space--1: calc(var(--space-0) / var(--ratio));
-    --space-0: 1rem;
+    --space-0: calc(1rem + .5vw);
     --space-1: calc(var(--space-0) * var(--ratio));
     --space-2: calc(var(--space-1) * var(--ratio));
     --space-3: calc(var(--space-2) * var(--ratio));
@@ -185,7 +185,6 @@ li +li h3 {
 }
 
 .words-inner {
-    --space-1: calc(var(--space-0) * var(--ratio) * 1.06);
     max-width: var(--max-width);
     padding: 4rem 1.5rem;
 }
