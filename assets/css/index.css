@@ -71,7 +71,7 @@ main {
 .card {
     display: flex;
     flex-direction: column;
-    min-height: 500px;
+    min-height: 520px;
     overflow: hidden;
     border: 1px solid var(--border);
     border-radius: 1rem;
