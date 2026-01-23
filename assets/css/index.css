@@ -54,7 +54,7 @@ main {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(325px, 100%), 1fr));
-    gap: calc(3rem + 1vw);
+    gap: calc(4rem + 1vw);
     align-items: stretch;
     width: 100%;
     margin-block-start: calc(var(--space-3) + 2vw);
