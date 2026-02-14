@@ -317,6 +317,10 @@ hr {
     display: flex;
 }
 
+.flex.with-links {
+    gap: 1rem;
+}
+
 .flex-center {
     display: flex;
     flex-direction: column;
@@ -326,16 +330,6 @@ hr {
 
 .center {
     text-align: center;
-}
-
-.gap--2 {
-    display: inline-block;
-    width: var(--space--2);
-}
-
-.gap--1 {
-    display: inline-block;
-    width: var(--space--1);
 }
 
 #coda {
