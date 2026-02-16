@@ -154,14 +154,13 @@ main {
     background-color: rgb(var(--background));
 }
 
-.words > div *:not(hr):not(.pull-quote):not(.box) + *:not(hr):not(.pull-quote):not(.box) {
+.words-inner > div:first-of-type * + *, 
+.words-inner * + p, * + ul, .fancy-pants-list li + li {
     margin-block-start: var(--space-1);
 }
 
-*:not(.pull-quote):not(.box) + h2:not(.card-content h2),
-*:not(.pull-quote):not(.box) + h3,
-li +li h3 {
-    margin-block-start: var(--space-3) !important;
+p + h2, ul + h2, p + h3, li + li h3 {
+    margin-block-start: var(--space-3);
 }
 
 .words-inner {
@@ -173,7 +172,7 @@ h1 {
     font-family: var(--heading);
     font-size: var(--heading-1);
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.3;
     font-style: normal;
     color: rgb(var(--primary));
 }
@@ -183,7 +182,7 @@ h2 {
     font-size: var(--heading-2);
     font-weight: bold;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 1.4;
     color: rgb(var(--primary));
 }
 
@@ -192,7 +191,7 @@ h3 {
     font-size: var(--heading-3);
     font-weight: bold;
     font-style: normal;
-    line-height: 1.3;
+    line-height: 1.4;
     color: rgb(var(--primary));
 }
 
@@ -291,6 +290,7 @@ em,
 }
 
 .blockquote {
+    margin-block-start: var(--space-1);
     margin-inline-start: .15rem;
     padding-left: 1.5rem;
     border-left: 5px solid rgb(var(--quote-border));
