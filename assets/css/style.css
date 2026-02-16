@@ -155,7 +155,7 @@ main {
 }
 
 .words-inner > div:first-of-type * + *, 
-.words-inner * + p, * + ul, .fancy-pants-list li + li {
+.words-inner *:not(.divider) + p, * + ul, .fancy-pants-list li + li {
     margin-block-start: var(--space-1);
 }
 
@@ -330,6 +330,18 @@ hr {
 
 .center {
     text-align: center;
+}
+
+.divider {
+    display: flex;
+    justify-content: space-around;
+    max-width: calc(var(--max-width) / 4);
+    margin: var(--space-3) auto;
+}
+
+.star {
+    width: 1em;
+    height: auto;
 }
 
 #coda {
