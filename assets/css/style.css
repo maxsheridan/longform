@@ -102,9 +102,9 @@ html {
 }
 
 body {
-    z-index: 0;
     min-height: 100vh;
     min-height: 100dvh;
+    z-index: 0;
     font-family: var(--body);
     font-size: var(--font-size-1);
     font-weight: 400;
@@ -318,7 +318,7 @@ hr {
 }
 
 .flex.with-links {
-    gap: 1rem;
+    gap: var(--space--1);
 }
 
 .flex-center {
