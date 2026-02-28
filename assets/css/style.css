@@ -351,7 +351,7 @@ hr {
 .thumbs-up {
     width: auto;
     height: 2.15em;
-    margin-block-start: var(--space-2);
+    margin-block-start: var(--space-3);
     margin-block-end: calc(4rem + var(--space-1));
 }
 
